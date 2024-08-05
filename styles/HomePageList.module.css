@@ -1,0 +1,13 @@
+.listContent {
+    margin-top: 40px;
+}
+
+.listTitle {
+    border-bottom: 2px solid var(--primary-text-color);
+}
+
+.listCover{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}

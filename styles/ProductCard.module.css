@@ -1,0 +1,50 @@
+.cardWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 350px;
+    border: 1px solid var(--primary-text-color);
+}
+
+.cardImg {
+    height: 200px;
+    margin: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    background-color: aquamarine;
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+.cardInfo .productName {
+    font-size: 11px;
+}
+
+.cardInfo .productPrice {
+    color: red;
+    font-weight: bold;
+}
+
+.cardBtn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.cardBtn .buyBtn {
+    padding: 8px 16px;
+    border: none;
+    border-top: 1px solid  var(--primary-text-color);
+    border-left: 1px solid  var(--primary-text-color);
+    color: var(--primary-text-color);
+    background-color: transparent;
+    cursor: pointer;
+}
