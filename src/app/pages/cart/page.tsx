@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from 'react';
+import Image from 'next/image';
 import styles from '../../../../styles/Cart.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash, faX } from '@fortawesome/free-solid-svg-icons';
+import { faX } from '@fortawesome/free-solid-svg-icons';
 
 export default function Cart() {
   // Initial quantities for each product row
@@ -51,9 +52,11 @@ export default function Cart() {
         </thead>
         <tbody className={styles.tableBody}>
           {products.map((product, index) => (
-            <tr className={styles.tableRows} key={index}>
+            <tr className={styles.tableRows} key={product.name + index}>
               <td className={styles.tableProduct}>
-                <div className={styles.tableProductImage}></div>
+                <div className={styles.tableProductImage}>
+                  <Image src='/images/tay_cam_xbox_fire_vapor.jpg' alt='Tay cầm Xbox' width={200} height={200}/>
+                </div>
                 <div className={styles.tableProductInfo}>
                   <span>{product.name}</span>
                   <span>{product.details}</span>

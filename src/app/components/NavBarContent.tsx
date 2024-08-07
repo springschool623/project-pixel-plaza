@@ -5,6 +5,7 @@ import Link from 'next/link';
 const NavBarContent = () => {
   return (
     <div className={styles.navDropdownMenu}>
+      <div></div>
     </div>
   )
 };

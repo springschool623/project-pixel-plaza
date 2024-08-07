@@ -16,23 +16,29 @@
   --gradient-center: #590592;
   --gradient-end: #135bec;
   /* THEME */
-  --blue-color: #4176FC;
   --dark-blue-color: #293854;
   --black-color: #201F24;
   --white-color: #FDFFF7;
-  --secondary-color: #3b3bee;
+  --secondary-color: #4176FC;
+  --primary-font-family: 'Montserrat', sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Press Start 2P', cursive;
   background: var(--primary-color);
   color: var(--primary-text-color);
 }
 
 main {
   padding: 10px 60px;
-  padding-bottom: 120px;
+  margin-bottom: 120px;
+}
+
+.sticky {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it is on top of other elements */
 }
