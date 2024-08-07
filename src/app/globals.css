@@ -15,6 +15,11 @@
   --gradient-start: #590592;
   --gradient-center: #590592;
   --gradient-end: #135bec;
+  /* THEME */
+  --blue-color: #4176FC;
+  --dark-blue-color: #293854;
+  --black-color: #201F24;
+  --white-color: #FDFFF7;
   --secondary-color: #3b3bee;
 }
 
