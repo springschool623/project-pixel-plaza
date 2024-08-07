@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from '../../../styles/Footer.module.css'
-import { faEnvelope, faHome } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDoubleRight, faEnvelope, faHome } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faFacebookF, faGoogle, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
@@ -71,7 +71,7 @@ const Footer = () => {
             <h4>VỀ PIXELPLAZA</h4>
             <p>Liên hệ</p>
             <p>Giới thiệu PixelPlaza</p>
-            <p>PixelPlaza Shop</p>
+            <p>PixelPlaza Shop<FontAwesomeIcon icon={faAngleDoubleRight} className={styles.footerIcon}/></p>
             <p>Phản đối - Hợp tác</p>
             <p>Hướng dẫn thanh toán</p>
             <p>Tuyển dụng</p>
