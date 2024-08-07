@@ -3,18 +3,19 @@
 
 /* styles/colors/colors.css */
 :root {
-  --primary-color: #111111;
+  --primary-color: #ffffff;
   --nav-bar-color: #5d009c;
   --accent-color: #e74c3c;
   --background-color: #ecf0f1;
   --text-color: #2c3e50;
   --header-bg-color: #000;
   --header-logo-bg-color: #333;
-  --primary-text-color: #fff;
+  --primary-text-color: #111111;
   --header-hover-color: #ff4081;
   --gradient-start: #590592;
   --gradient-center: #590592;
   --gradient-end: #135bec;
+  --secondary-color: #3b3bee;
 }
 
 body {
