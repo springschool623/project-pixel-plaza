@@ -1,4 +1,4 @@
 .homeBiggestBanner {
     height: 400px;
-    background-color: red;
+    background-color: var(--secondary-color);
 }
