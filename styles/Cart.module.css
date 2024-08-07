@@ -1,0 +1,145 @@
+.tableContent {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 30px 0;
+    padding: 0 20px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.tableRows {
+    height: 20px;
+}
+
+.tableContent, .tableRows {
+    border-bottom: 1px solid var(--secondary-color);
+    border-collapse: collapse;
+}
+
+.tableHeader th {
+    font-weight: normal;
+    height: 40px;
+}
+
+.tableRows td{
+    height: 120px;
+    padding: 0;
+    padding-top: 28px;
+    padding-bottom: 40px;
+}
+
+.tableRows th:last-child, .tableRows td:last-child{
+    text-align: right;
+}
+
+.tableProduct {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tableProductImage {
+    aspect-ratio: 1;
+    height: 100%;
+    background-color: aqua;
+    margin-right: 24px;
+}
+
+.tableProductInfo {
+    display: flex;
+    flex-direction: column;
+    align-self: self-start;
+    gap: 20px;
+    font-weight: bolder;
+}
+
+.tableProductInfo span:nth-child(2) {
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.tablePrice {
+    width: 20%;
+}
+
+.tableQuantity {
+    width: 15%;
+}
+
+.tableTotal {
+    width: 10%;
+}
+
+.quantityCount {
+    display: flex;
+    width: 120px;
+    border: 1px solid var(--primary-text-color);
+}
+
+.tableQuantity button {
+    color: var(--primary-text-color);
+    background-color: transparent;
+    border: none;
+    padding: 12px 16px;
+    cursor: pointer;
+  }
+  
+.tableQuantity span {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 16px;
+    text-align: center;
+}
+
+.tableAction {
+    width: 10%;
+}
+
+.tableAction button {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.cartTotal {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.payContent {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 360px;
+    height: 220px;
+    font-size: 13px;
+}
+
+.payContent label{
+    display: flex;
+    justify-content: space-between;
+}
+
+.payContent label input {
+    margin: 0;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.payContent label:nth-child(4){
+    margin: 8px 0;
+    width: 270px;
+}
+
+.payContent button {
+    padding: 6px 12px;
+    border: 0;
+    border: 1px solid var(--primary-text-color);
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    cursor: pointer;
+}
