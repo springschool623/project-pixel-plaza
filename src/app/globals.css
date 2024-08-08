@@ -3,23 +3,13 @@
 
 /* styles/colors/colors.css */
 :root {
-  --primary-color: #ffffff;
-  --nav-bar-color: #5d009c;
-  --accent-color: #e74c3c;
-  --background-color: #ecf0f1;
-  --text-color: #2c3e50;
-  --header-bg-color: #000;
-  --header-logo-bg-color: #333;
-  --primary-text-color: #111111;
-  --header-hover-color: #ff4081;
-  --gradient-start: #590592;
-  --gradient-center: #590592;
-  --gradient-end: #135bec;
-  /* THEME */
+  /* COLOR */
+  --primary-color: #4176FC;
+  --secondary-color: #FDFFF7;
   --dark-blue-color: #293854;
   --black-color: #201F24;
-  --white-color: #FDFFF7;
-  --secondary-color: #4176FC;
+
+  /* FONT */
   --primary-font-family: 'Montserrat', sans-serif;
 }
 
@@ -27,14 +17,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: var(--primary-color);
-  color: var(--primary-text-color);
+  background: var(--white-color);
+  color: var(--black-color);
 }
 
 main {
-  padding: 20px 100px;
-  padding-bottom: 120px;
-  padding: 10px 60px;
+  margin: 20px 60px;
   margin-bottom: 120px;
 }
 
