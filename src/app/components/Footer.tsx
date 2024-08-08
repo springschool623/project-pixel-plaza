@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from '../../../styles/Footer.module.css'
-import { faEnvelope, faHome } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDoubleRight, faEnvelope, faHome } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faFacebookF, faGoogle, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
@@ -77,6 +77,8 @@ const Footer = () => {
               <p>Giới thiệu PixelPlaza</p>
             </Link>
             <p>PixelPlaza Shop</p>
+            <p>Giới thiệu PixelPlaza</p>
+            <p>PixelPlaza Shop<FontAwesomeIcon icon={faAngleDoubleRight} className={styles.footerIcon}/></p>
             <p>Phản đối - Hợp tác</p>
             <p>Hướng dẫn thanh toán</p>
             <p>Tuyển dụng</p>

@@ -23,6 +23,11 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <Header />
         <NavigationBar></NavigationBar>
+      <body className={inter.className}>
+        <div className="sticky">
+          <Header />
+          <NavigationBar></NavigationBar>
+        </div>
         <main>{children}</main>
         <Footer/>
       </body>

@@ -3,6 +3,7 @@
     background-color: var(--blue-color);
     height: 80px;
     padding: 0 60px;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -58,7 +59,7 @@
   .searchbarIcon {
     width: 18px;
     height: 18px;
-    color: #000;
+    color: var(--secondary-color);
   }
 
   .headerList {
@@ -72,18 +73,15 @@
     text-decoration: none;
     font-family: 'Press Start 2P', cursive;
   }
-  
-  .headerItem a:hover {
-    color: #ff4081;
-  }
 
   .headerIcon {
     width: 25px;
     height: 25px;
     color: var(--primary-color);
-  }
-
-  .headerIcon:hover {
     color: var(--secondary-color);
   }
+
+  /* .headerIcon:hover {
+    color: var(--secondary-color);
+  } */
   
