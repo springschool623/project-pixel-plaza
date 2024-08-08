@@ -7,7 +7,9 @@ import HomePageNewItemList from "@/app/components/HomePageNewItemList";
 export default function Home() {
   return(
     <div>
-      <div className={styles.homeBiggestBanner}></div>
+      <div className={styles.homeBiggestBanner}>
+        <Image src='/images/banner1.jpg' alt='Tay cầm Xbox' width={2000} height={2000}/>
+      </div>
       <HomePageNewProductList/>
       <HomePageSpecialProductList/> 
       <HomePageNewItemList/> 

@@ -1,4 +1,10 @@
 .homeBiggestBanner {
+    width: 100%;
     height: 400px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.homeBiggestBanner img {
+    width: 100%;
+    height: 100%;
 }

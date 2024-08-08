@@ -11,8 +11,8 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
         <div className={`${styles.footerItems} ${styles.footerItem_1}`}>
-        <div className={styles.headerLogo}>
-          <Image src="/logo.png" alt="Logo" width={200} height={60}/>
+        <div className={styles.footerLogo}>
+          <Image src="/logo.png" alt="Logo" width={200} height={50}/>
         </div>
           <div className={styles.footerInfo}>
             <h4>MUA HÀNG, GÓP Ý</h4>
@@ -46,10 +46,9 @@ const Footer = () => {
         <div className={`${styles.footerItems} ${styles.footerItem_2}`}>
           <div className={styles.footerInfo}>
             <h4>ĐỊA CHỈ LIÊN HỆ</h4>
-            <p>Chi nhánh 1: <span>92 Pasteur, P.Bến Nghé, Q.1, TP.HCM</span></p>
-            <p>Chi nhánh 2: <span>66 Thành Thái, P.12, Q10, TP.HCM</span></p>
-            <p>Chi nhánh 3: <span>Kiot X01114 Sunrise Plaza 27 Nguyễn Hữu Thọ, P.Tân Hưng, Q.7, TP.HCM</span></p>
-            <p>Chi nhánh 4: <span>Tầng 6 Aeon Mall Bình Tân</span></p>
+            <p>CN 1: <span>92 Pasteur, P.Bến Nghé, Q.1, TP.HCM</span></p>
+            <p>CN 2: <span>66 Thành Thái, P.12, Q10, TP.HCM</span></p>
+            <p>CN 3: <span>Tầng 6 Aeon Mall Bình Tân</span></p>
           </div>
           <br />
           <div className={styles.footerInfo}>
@@ -70,18 +69,32 @@ const Footer = () => {
           </div>
         </div>
         <div className={`${styles.footerItems} ${styles.footerItem_4}`}>
-          <div className={styles.footerInfo}>
+          <div className={ `${styles.footerInfo}`}>
             <h4>VỀ PIXELPLAZA</h4>
-            <p>Liên hệ</p>
-            <Link href="/pages/aboutus" className={styles.footerLink}>
-              <p>Giới thiệu PixelPlaza</p>
+            <Link href="/" className={styles.footerLink}>
+                <p>Liên hệ</p><FontAwesomeIcon icon={faAngleDoubleRight} className={styles.footerIcon}/>
             </Link>
-            <p>PixelPlaza Shop</p>
-            <p>Giới thiệu PixelPlaza</p>
-            <p>PixelPlaza Shop<FontAwesomeIcon icon={faAngleDoubleRight} className={styles.footerIcon}/></p>
-            <p>Phản đối - Hợp tác</p>
-            <p>Hướng dẫn thanh toán</p>
-            <p>Tuyển dụng</p>
+            <Link href="/about-us" className={styles.footerLink}>
+              <p>Giới thiệu PixelPlaza</p><FontAwesomeIcon icon={faAngleDoubleRight} className={styles.footerIcon}/>
+            </Link>
+            <Link href="/" className={styles.footerLink}>
+                <p>PixelPlaza Shop</p><FontAwesomeIcon icon={faAngleDoubleRight} className={styles.footerIcon}/>
+            </Link>
+            <Link href="/" className={styles.footerLink}>
+                <p>Giới thiệu PixelPlaza</p><FontAwesomeIcon icon={faAngleDoubleRight} className={styles.footerIcon}/>
+            </Link>
+            <Link href="/" className={styles.footerLink}>
+                <p>PixelPlaza Shop</p><FontAwesomeIcon icon={faAngleDoubleRight} className={styles.footerIcon}/>
+            </Link>
+            <Link href="/" className={styles.footerLink}>
+                <p>Phản đối - Hợp tác</p><FontAwesomeIcon icon={faAngleDoubleRight} className={styles.footerIcon}/>
+            </Link>
+            <Link href="/" className={styles.footerLink}>
+                <p>Hướng dẫn thanh toán</p><FontAwesomeIcon icon={faAngleDoubleRight} className={styles.footerIcon}/>
+            </Link>
+            <Link href="/" className={styles.footerLink}>
+                <p>Tuyển dụng</p><FontAwesomeIcon icon={faAngleDoubleRight} className={styles.footerIcon}/>
+            </Link>
           </div>
         </div>
       </div>

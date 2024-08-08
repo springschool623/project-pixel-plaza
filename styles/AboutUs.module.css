@@ -1,30 +1,31 @@
-.margin{
-    margin-left: 150px;
-    margin-right: 150px;
-}
-.maindiv {
+.aboutUsContainer {
     display: flex;
 }
-.img_border {
+
+.aboutUsContainer h4 {
+    margin-top: 0;
+}
+
+.imgBorder {
     border-radius: 10px;
     margin-left: 50px;
 }
-.p {
+
+.aboutUsContainer p {
     text-align: justify;
     line-height: 1.5;
-    margin: 20px 0;
-    font-size: 16px;
+    font-size: 14px;
 }
+
 .headerContainer {
     display: flex;
     align-items: center;
 }
-.h3_text {
+.aboutUsTitle {
     font-size: 40px;
-    margin-bottom: 10px;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.deco_image {
-    margin-left: 1px; /* Adjust spacing as needed */
+.aboutUsTitleDecor {
+    margin-left: 5px; 
     transform: rotate(40deg);
 }

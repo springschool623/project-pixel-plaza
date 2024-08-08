@@ -9,7 +9,9 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.headerLogo}>
-        <Image src="/logo.png" alt="Logo" width={200} height={50}/>
+        <Link href="/home">
+          <Image src="/logo.png" alt="Logo" width={200} height={50}/>
+        </Link>
       </div>
       <div className={styles.headerSearchbar}>
         <input type="text" className={styles.searchbarInput}/>
