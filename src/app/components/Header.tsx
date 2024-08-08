@@ -1,5 +1,6 @@
 // components/NavigationBar.js
 import Link from 'next/link';
+import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faShoppingCart, faUserCircle, faSearch, faHeart } from '@fortawesome/free-solid-svg-icons';
 import styles from '../../../styles/Header.module.css'
@@ -7,7 +8,9 @@ import styles from '../../../styles/Header.module.css'
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.headerLogo}></div>
+      <div className={styles.headerLogo}>
+        <Image src="/logo.png" alt="Logo" width={200} height={50}/>
+      </div>
       <div className={styles.headerSearchbar}>
         <input type="text" className={styles.searchbarInput}/>
         <button  className={styles.searchbarButton}>

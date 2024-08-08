@@ -1,6 +1,6 @@
 /* components/NavigationBar.module.css */
 .header {
-    background-color: var(--primary-color);
+    background-color: var(--blue-color);
     height: 80px;
     padding: 0 60px;
     box-sizing: border-box;
@@ -77,6 +77,7 @@
   .headerIcon {
     width: 25px;
     height: 25px;
+    color: var(--primary-color);
     color: var(--secondary-color);
   }
 

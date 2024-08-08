@@ -1,12 +1,12 @@
 // app/layout.js
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import NavigationBar from "./components/NavigationBar";
 import Footer from "./components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <body className={montserrat.className}>
+        <Header />
+        <NavigationBar></NavigationBar>
       <body className={inter.className}>
         <div className="sticky">
           <Header />
