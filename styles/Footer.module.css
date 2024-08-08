@@ -1,8 +1,14 @@
 .footer {
     height: 320px;
     padding: 30px 60px;
-    background-color: #F5F5F5;
-    border-top: 1px solid var(--primary-text-color);
+    background-color: var(--blue-color);
+    border-top: 1px solid var(--blue-color);
+    color: var(--primary-color);
+}
+
+.footerLink {
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 .footerContent {
@@ -60,7 +66,7 @@
 .footerIcon {
     width: 20px;
     height: 20px;
-    color: var(--primary-text-color);
+    color: var(--primary-color);
 }
 
 .footerItem_2 {

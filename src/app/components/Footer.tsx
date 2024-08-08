@@ -1,5 +1,6 @@
 // components/NavigationBar.js
 import Link from 'next/link';
+import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from '../../../styles/Footer.module.css'
 import { faEnvelope, faHome } from '@fortawesome/free-solid-svg-icons';
@@ -10,7 +11,9 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
         <div className={`${styles.footerItems} ${styles.footerItem_1}`}>
-          <div className={styles.footerLogo}></div>
+        <div className={styles.headerLogo}>
+          <Image src="/logo.png" alt="Logo" width={200} height={60}/>
+        </div>
           <div className={styles.footerInfo}>
             <h4>MUA HÀNG, GÓP Ý</h4>
             <p>Hotline: <span>0911153390</span></p>
@@ -70,7 +73,9 @@ const Footer = () => {
           <div className={styles.footerInfo}>
             <h4>VỀ PIXELPLAZA</h4>
             <p>Liên hệ</p>
-            <p>Giới thiệu PixelPlaza</p>
+            <Link href="/pages/aboutus" className={styles.footerLink}>
+              <p>Giới thiệu PixelPlaza</p>
+            </Link>
             <p>PixelPlaza Shop</p>
             <p>Phản đối - Hợp tác</p>
             <p>Hướng dẫn thanh toán</p>
