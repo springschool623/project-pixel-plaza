@@ -12,7 +12,7 @@ const NavigationBar = () => {
       <div>
         <ul className={styles.navList}>
           <li className={styles.navItem}>
-            <Link href="/pages/home">
+            <Link href="/home">
               <FontAwesomeIcon icon={faHome} className={styles.navbarIcon}/>
               <span>Trang chủ</span>
             </Link>
@@ -34,7 +34,7 @@ const NavigationBar = () => {
               <FontAwesomeIcon icon={faList} className={styles.navbarIcon}/>
               <div className={styles.navbarItemDropdown}>
                 <span>Thể loại</span>
-                <FontAwesomeIcon icon={faAngleDown} className={styles.itemArrow} />              
+                <span className={styles.navbarDropdownStyle}></span>
               </div>
             </Link>
             <NavBarContent/>
