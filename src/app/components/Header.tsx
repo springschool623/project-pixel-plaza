@@ -26,7 +26,7 @@ const Header = () => {
           </Link>
         </li>
         <li className={styles.headerItem}>
-          <Link href="/pages/cart">
+          <Link href="/cart">
               <FontAwesomeIcon icon={faShoppingCart} className={styles.headerIcon}/>
           </Link>
         </li>
