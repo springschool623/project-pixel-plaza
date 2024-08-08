@@ -32,6 +32,8 @@ body {
 }
 
 main {
+  padding: 20px 100px;
+  padding-bottom: 120px;
   padding: 10px 60px;
   margin-bottom: 120px;
 }
