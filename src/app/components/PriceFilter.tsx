@@ -27,14 +27,14 @@ export default function PriceFilter() {
                 <input 
                     type="range" 
                     min={0} 
-                    max={9999999} 
+                    max={4999999} 
                     value={slider1Value} 
                     onChange={(e) => setSlider1Value(Number(e.target.value))} 
                     className={styles.slider1}
                 />
                 <input 
                     type="range" 
-                    min={0} 
+                    min={5000000} 
                     max={9999999} 
                     value={slider2Value} 
                     onChange={(e) => setSlider2Value(Number(e.target.value))} 
