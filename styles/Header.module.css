@@ -7,7 +7,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 999;
   }
 
   .headerLogo {
@@ -17,6 +16,7 @@
     width: 150px;
     height: 50px;
     box-sizing: border-box;
+    background-color: var(--header-logo-bg-color);
   }
 
   .headerLogo a {
@@ -50,7 +50,7 @@
     font-size: 16px;
     box-sizing: border-box;
     outline: none;
-    background-color: var(--secondary-color);
+    background-color: #fff;
   }
 
   .searchbarButton {
@@ -63,13 +63,13 @@
     box-sizing: border-box;
     outline: none;
     cursor: pointer;
-    background-color: var(--secondary-color);
+    background-color: #fff;
   }
   
   .searchbarIcon {
     width: 18px;
     height: 18px;
-    color: var(--primary-color);
+    color: var(--secondary-color);
   }
 
   .headerList {
