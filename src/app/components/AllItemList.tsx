@@ -4,7 +4,7 @@ import styles from '../../../styles/HomePageList.module.css';
 import ProductCard from './ProductCard';
 
 const HomePageNewItemList = () => {
-  const totalProducts = 13; // Tổng số ProductCard bạn muốn hiển thị
+  const totalProducts = 14; // Tổng số ProductCard bạn muốn hiển thị
   const products = Array.from({ length: totalProducts });
 
   // Chia sản phẩm thành các hàng, mỗi hàng có tối đa 4 sản phẩm
