@@ -8,7 +8,7 @@ export default function Home() {
   return(
     <div>
       <div className={styles.homeBiggestBanner}>
-        <Image src='/images/banner1.jpg' alt='Tay cầm Xbox' width={2000} height={2000}/>
+        <Image src='/images/banner1.jpg' alt='Tay cầm Xbox' width={3000} height={3000}/>
       </div>
       <HomePageNewProductList/>
       <HomePageSpecialProductList/> 
