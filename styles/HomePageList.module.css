@@ -1,3 +1,7 @@
+.listContent {
+    margin-top: 40px;
+}
+
 .listTitle {
     font-size: 20px;
     font-weight: bold;
@@ -6,5 +10,6 @@
 
 .listCover{
     display: flex;
+    justify-content: space-between;
     margin-top: 20px;
 }
