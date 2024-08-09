@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import styles from '../../../styles/NavigationBar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faShoppingCart, faUserCircle, faSearch, faHome, faList, faHeadset, faAngleDown, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faShoppingCart, faUserCircle, faSearch, faHome, faList, faHeadset, faAngleDown, faAngleRight, faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 import { faPlaystation, faXbox } from '@fortawesome/free-brands-svg-icons';
 import NavBarContent from './NavBarContent';
 
@@ -15,6 +15,12 @@ const NavigationBar = () => {
             <Link href="/home">
               <FontAwesomeIcon icon={faHome} className={styles.navbarIcon}/>
               <span>Trang chủ</span>
+            </Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link href="/shop">
+              <FontAwesomeIcon icon={faShoppingBag} className={styles.navbarIcon}/>
+              <span>Cửa hàng</span>
             </Link>
           </li>
           <li className={styles.navItem}>
