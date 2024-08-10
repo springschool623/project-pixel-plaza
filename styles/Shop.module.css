@@ -9,7 +9,7 @@
 .allItemMenu ul {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -55,9 +55,14 @@
     justify-content: space-between;
 }
 
-.filterProducts {
+.filterSelector {
     width: 80px;
     height: 30px;
     outline: none;
     border: 1px solid black;
+}
+
+.filterSelector option{
+    border-radius: 15px;
+    background-color: red;
 }
