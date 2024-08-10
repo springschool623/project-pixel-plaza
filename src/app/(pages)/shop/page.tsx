@@ -4,12 +4,23 @@ import styleHome from '../../../../styles/HomePage.module.css';
 import styleShop from '../../../../styles/Shop.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import PriceFilter from "@/app/components/PriceFilter";
 import AllItemList from "@/app/components/AllItemList";
+import PriceSlider from "@/app/components/PriceSlider";
+import CustomDropdownList from "@/app/components/CustomDropdownList";
 
 export default function Shop() {
-  const handlePriceChange = (values: { min: number; max: number }) => {
-    console.log("Selected price range:", values);
+  const options = [
+    { value: '0', label: 'Bán chạy nhất' },
+    { value: '1', label: 'Giá từ thấp đến cao' },
+    { value: '2', label: 'Giá từ cao đến thấp' },
+    { value: '3', label: 'Sắp xếp theo A - Z' },
+    { value: '4', label: 'Sắp xếp theo Z - A' },
+    // Thêm các tùy chọn khác nếu cần
+  ];
+
+  const handleDropdownChange = (value:any) => {
+    console.log("Selected value:", value);
+    // Xử lý sự kiện khi thay đổi lựa chọn
   };
 
   return(
@@ -39,7 +50,7 @@ export default function Shop() {
                     <span>GAMING GEAR</span>
                 </li>
             </ul>
-            <PriceFilter/>
+            <PriceSlider/>
             <div className={styleShop.menuBrands}>
               <span>Thương hiệu</span>
               <ul>
@@ -54,10 +65,7 @@ export default function Shop() {
         </div>
         <div className={styleShop.allItemContainer}>
           <div className={styleShop.allItemContainerHeader}>
-            <select className={styleShop.filterProducts}>
-              <option value="0">Nổi bật</option>
-              <option value="2">Giá từ cao đến thấp</option>
-            </select>
+            <CustomDropdownList options={options} onChange={handleDropdownChange} />
             <span>Tổng: 440 sản phẩm</span>
             <span></span>
           </div>
