@@ -24,13 +24,13 @@ const NavigationBar = () => {
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/shop">
+            <Link href="/shop/xbox">
               <FontAwesomeIcon icon={faXbox} className={styles.navbarIcon}/>
               <span>Xbox</span>
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/shop">
+            <Link href="/shop/playstation">
               <FontAwesomeIcon icon={faPlaystation} className={styles.navbarIcon}/>
               <span>Playstation</span>
             </Link>

@@ -1,4 +1,3 @@
-// src/app/layoutClient.tsx
 "use client";
 
 import Header from "./components/Header";
@@ -33,8 +32,11 @@ export default function LayoutClient({
           <NavigationBar />
         </div>
       )}
-      <main>{children}</main>
-      {!showLayout && <Footer />}
+      {/* Vô hiệu hóa CSS cho main nếu ở trang /payment */}
+      <main className={pathname === "/payment" ? "" : "mainCSS"}>
+        {children}
+      </main>
+      <Footer />
     </>
   );
 }

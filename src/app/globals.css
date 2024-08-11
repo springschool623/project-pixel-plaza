@@ -9,6 +9,7 @@
   --dark-blue-color: #293854;
   --black-color: #201F24;
   --white-color: #FEFEFE;
+  --lighter-primary-color: #4176fc8a;
 
   /* FONT */
   --primary-font-family: 'Montserrat', sans-serif;
@@ -20,9 +21,10 @@ body {
   box-sizing: border-box;
   background: var(--white-color);
   color: var(--black-color);
+  font-family: var(--primary-font-family);
 }
 
-main {
+.mainCSS {
   margin: 20px 60px;
   margin-bottom: 120px;
 }

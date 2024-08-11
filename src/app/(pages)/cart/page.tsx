@@ -5,6 +5,7 @@ import Image from 'next/image';
 import styles from '../../../../styles/Cart.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX } from '@fortawesome/free-solid-svg-icons';
+import Link from 'next/link';
 
 export default function Cart() {
   // Initial quantities for each product row
@@ -86,7 +87,9 @@ export default function Cart() {
           <label>Giảm giá: <span>0</span></label>
           <label>Tạm tính: <span>{(products.reduce((total, product, index) => total + (product.price * quantities[index]), 0)).toLocaleString()}đ</span></label>
           <label><input type="checkbox"/>Tôi đã đọc và đồng ý chính sách bảo mật và điều kiện thanh toán</label>
-          <button>THANH TOÁN</button>
+          <Link href="/payment" className={styles.buttonPayment}>
+            <span>THANH TOÁN</span>
+          </Link>  
           <label>Đăng nhập hoặc đăng ký để nhận thêm nhiều thông tin ưu đãi hơn</label>
         </div>
       </div>

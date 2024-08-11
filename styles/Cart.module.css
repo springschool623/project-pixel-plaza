@@ -139,8 +139,12 @@
     width: 270px;
 }
 
-.payContent button {
-    padding: 6px 12px;
+.payContent .buttonPayment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 8px 12px;
     border: 0;
     border: 1px solid var(--black-color);
     background-color: var(--white-color);
