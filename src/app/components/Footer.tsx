@@ -56,7 +56,7 @@ const Footer = () => {
             <p>Các ngày trong tuần (Thứ 2 - Thứ 7): <span>9h - 20h30</span></p>
             <p>Chủ nhật và ngày lễ: <span>9h - 19h</span></p>
           </div>
-        </div>
+        </div>  
         <div className={`${styles.footerItems} ${styles.footerItem_3}`}>
           <div className={styles.footerInfo}>
             <h4>THÔNG TIN</h4>
