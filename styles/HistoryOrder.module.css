@@ -1,0 +1,82 @@
+.cover{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.header{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.divider{
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #000;
+    margin-bottom: 20px;
+}
+
+.tableContent {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px 0;
+    padding: 0 20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.tableRows {
+    height: 20px;
+}
+
+.tableContent, .tableRows {
+    border-bottom: 1px solid #cccccc;
+    border-collapse: collapse;
+}
+
+.tableHeader th {
+    font-weight: 700;
+    height: 40px;
+    font-size: 16px;
+}
+
+.tableRows td{
+    
+    padding: 0;
+    padding-top: 28px;
+    padding-bottom: 40px;
+}
+
+.tableRows th:last-child, .tableRows td:last-child{
+    text-align: left;
+}
+
+.tableDate {
+    width: 12%;
+}
+
+.tableId {
+    width: 12%;
+}
+
+.tableProduct {
+    width: 50%;
+}
+
+.tableTotal {
+    width: 10%;
+}
+
+/* .tableQuantity span {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+} */
+
+.tableStatus {
+    width: 10%;
+}
+
+.tableDatas{
+    width: 100px;
+}
