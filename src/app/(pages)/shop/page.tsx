@@ -15,12 +15,10 @@ export default function Shop() {
     { value: '2', label: 'Giá từ cao đến thấp' },
     { value: '3', label: 'Sắp xếp theo A - Z' },
     { value: '4', label: 'Sắp xếp theo Z - A' },
-    // Thêm các tùy chọn khác nếu cần
   ];
 
   const handleDropdownChange = (value:any) => {
     console.log("Selected value:", value);
-    // Xử lý sự kiện khi thay đổi lựa chọn
   };
 
   return(

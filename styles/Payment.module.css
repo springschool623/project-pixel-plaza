@@ -1,0 +1,192 @@
+.paymentWrapper {
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    background-color: var(--white-color);
+    font-family: var(--primary-font-family);
+}
+
+.leftWrapper {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--lighter-primary-color);
+}
+
+.paymentContainer {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 90%;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+    height: 100%;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+.paymentLogo {
+    width: 210px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.paymentLogo img{
+    width: 100%;
+    height: 100%;
+}
+
+.paymentInput {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.paymentInput label {
+    font-weight: bold;
+}
+
+.inputContent {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border: 1.5px solid black;
+    font-size: 12px;
+  }
+
+  .paymentInput span {
+    font-size: 12px;
+    color: #939393;
+  }
+
+  .inputContent input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 2px 0;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+  }
+
+  .inputContentPlus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .inputContentItem {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputContentIcon {
+    padding: 10px;
+    font-size: 20px;
+  } 
+
+  .inputContentWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .halfInputContent {
+    width: 48%;
+  }
+
+  .inputContent .inputText {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 2px 0;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+  }
+
+  .paymentCheckbox {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  .paymentCheckbox input{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    margin-right: 10px;
+  }
+
+  .inputNote {
+    margin-bottom: 8px;
+  }
+
+  .countrySelectorWrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .paymentMethodWrapper {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .paymentMethodWrapper span {
+    color: var(--black-color);
+  }
+
+  .paymentMethodItems {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .paymentMethodItems input{
+    width: 20px;
+    height: 20px;
+  }
+
+  .paymentButtonCancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: var(--white-color);
+  }
+
+  .paymentCancelIcon {
+    width: 14px;
+    height: 16px;
+    transform: rotate(-90deg);
+  }
+
+  .paymentCancelIconRotate {
+    transform: rotate(0);
+    transition: transform 0.3s ease;
+  }
+
+  .paymentMethodItemsContent {
+  }
+
+  .paymentMethodItemsContent span {
+    color: var(--black-color);
+  }
