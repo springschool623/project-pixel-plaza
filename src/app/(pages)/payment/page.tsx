@@ -6,8 +6,9 @@ import countries from 'i18n-iso-countries';
 import {getDistricts, getDistrictsByProvinceCode, getProvinces, getWards, getWardsByDistrictCode, IDistricts, IProvinces, IWards} from "vn-provinces";
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import PaymentMethods from '@/app/components/PaymentMethods';
+import Link from 'next/link';
 
 
 // Đăng ký ngôn ngữ cho danh sách quốc gia (ví dụ: Tiếng Việt)
@@ -134,8 +135,46 @@ export default function Payment() {
               <div className={styles.paymentInput}>
                 <label>Liên hệ</label>
                 <span className={styles.inputNote}>Toàn bộ các giao dịch được bảo mật và mã hóa</span>
-                <div>
                 <PaymentMethods/>
+              </div>
+              <div className={styles.paymentButtonContent}>
+                <Link href='/cart' className={styles.paymentBackButton}>
+                  <FontAwesomeIcon icon={faAngleLeft}/> Quay lại giỏ hàng
+                </Link>
+                <button className={styles.paymentOrderButton}>Đặt hàng</button>
+              </div>
+              <div className={styles.paymentFooter}>
+                <div className={styles.paymentFooterItems}>
+                  <Link href='/cart' className={styles.paymentFooterLink}>Chính sách hoàn tiền</Link>
+                  <Link href='/cart' className={styles.paymentFooterLink}>Chính sách vận chuyển</Link>
+                  <Link href='/cart' className={styles.paymentFooterLink}>Chính sách quyền riêng tư</Link>
+                </div>
+                <div className={styles.paymentFooterItems}>
+                  <Link href='/cart' className={styles.paymentFooterLink}>Điều khoản dịch vụ</Link>
+                  <Link href='/cart' className={styles.paymentFooterLink}>Thông tin liên hệ</Link>
+                </div>
+              </div>
+            </div>
+            <div className={styles.rightContainer}>
+              <div className={styles.rightContainerItemWrapper}>
+                <div className={styles.rightContainerItem}>
+                  <Image src='/images/tay_cam_xbox_fire_vapor.jpg' alt='Tay cầm Xbox' className={styles.paymentProductImg} width={200} height={200}/>
+                  <span>Xbox Series Wireless Controller - Fire Vapor</span>
+                  <span>1.850.000đ</span>
+                </div>
+                <div className={styles.rightContainerItem}>
+                  <Image src='/images/tay_cam_xbox_fire_vapor.jpg' alt='Tay cầm Xbox' className={styles.paymentProductImg} width={200} height={200}/>
+                  <span>Xbox Series Wireless Controller - Fire Vapor</span>
+                  <span>1.850.000đ</span>
+                </div>
+                <div className={styles.rightContainerVoucher}>
+                  <input type="text" placeholder='Nhập mã giảm giá' className={styles.voucherInput}/>
+                  <button className={styles.voucherButton}>Áp dụng</button>
+                </div>
+                <div className={styles.paymentTotal}>
+                  <label className={styles.paymentTotalText}>Tạm tính: <span>3.700.000đ</span></label>
+                  <label className={styles.paymentTotalText}>Vận chuyển: <span>24.000đ</span></label>
+                  <label className={styles.paymentTotalText}>Tổng tiền: <span>3.724.000đ</span></label>
                 </div>
               </div>
             </div>

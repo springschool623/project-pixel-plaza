@@ -34,8 +34,9 @@
 .allItemContainer {
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
     width: 82%;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .menuBrands {

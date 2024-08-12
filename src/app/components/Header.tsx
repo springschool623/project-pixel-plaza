@@ -21,11 +21,6 @@ const Header = () => {
       </div>
       <ul className={styles.headerList}>
         <li className={styles.headerItem}>
-          <Link href="/user">
-              <FontAwesomeIcon icon={faHeart} className={styles.headerIcon}/>
-          </Link>
-        </li>
-        <li className={styles.headerItem}>
           <Link href="/login">
               <FontAwesomeIcon icon={faUserCircle} className={styles.headerIcon}/>
           </Link>

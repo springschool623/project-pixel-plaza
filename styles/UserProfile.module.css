@@ -25,6 +25,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    
+}
+
+.column p {
+    cursor: pointer;
 }
 
 .column > div:first-child {

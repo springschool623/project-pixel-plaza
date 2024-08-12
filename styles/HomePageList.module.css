@@ -8,7 +8,10 @@
     border-bottom: 2px solid var(--black-color);
 }
 
-.listCover{
+.listCover {
     display: flex;
+    flex-wrap: wrap; /* Cho phép các sản phẩm xuống hàng */
     margin-top: 20px;
+    gap: 50px;
 }
+
