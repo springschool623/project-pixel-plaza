@@ -8,7 +8,9 @@ const ProductCard = () => {
   return (
       <div className={styles.cardWrapper}>
         <div className={styles.cardImg}>
-          <Image src="/proitem1.jpg" alt="Sản phẩm" width={200} height={200}></Image>
+          <Link href='/products/product-{id}'>
+            <Image src="/proitem1.jpg" alt="Sản phẩm" width={200} height={200}></Image>
+          </Link>
         </div>
         <div className={styles.cardInfo}>
             <span className={styles.productName}>XBOX Series Wireless Controller - Fire Vapor</span>

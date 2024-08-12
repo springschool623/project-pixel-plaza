@@ -44,7 +44,7 @@ export default function Register() {
                             date={selectedDate}
                             fontSize={16}
                             inputWidth={500}
-                            margin={30}
+                            margin={40}
                         />
                         <FontAwesomeIcon icon={faCalendar} className={styles.iconRight}/>
                     </div>

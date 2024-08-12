@@ -12,7 +12,9 @@ const Footer = () => {
       <div className={styles.footerContent}>
         <div className={`${styles.footerItems} ${styles.footerItem_1}`}>
         <div className={styles.footerLogo}>
-          <Image src="/logo.png" alt="Logo" width={200} height={50}/>
+          <Link href='/home'>                
+            <Image src="/logo.png" alt="Logo" width={200} height={50}/>
+          </Link>
         </div>
           <div className={styles.footerInfo}>
             <h4>MUA HÀNG, GÓP Ý</h4>

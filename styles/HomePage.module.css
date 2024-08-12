@@ -1,6 +1,6 @@
 .homeBiggestBanner {
     width: 100%;
-    height: 500px;
+    height: 55vh;
     background-color: var(--primary-color);
     margin-bottom: 50px;
 }
