@@ -14,7 +14,7 @@ const Header = () => {
         </Link>
       </div>
       <div className={styles.headerSearchbar}>
-        <input type="text" className={styles.searchbarInput}/>
+        <input type="text" className={styles.searchbarInput} placeholder='Tôi muốn tìm...'/>
         <button  className={styles.searchbarButton}>
           <FontAwesomeIcon icon={faSearch} className={styles.searchbarIcon}/>
         </button>

@@ -83,12 +83,6 @@ const Footer = () => {
                 <p>PixelPlaza Shop</p><FontAwesomeIcon icon={faAngleDoubleRight} className={styles.footerIcon}/>
             </Link>
             <Link href="/" className={styles.footerLink}>
-                <p>Giới thiệu PixelPlaza</p><FontAwesomeIcon icon={faAngleDoubleRight} className={styles.footerIcon}/>
-            </Link>
-            <Link href="/" className={styles.footerLink}>
-                <p>PixelPlaza Shop</p><FontAwesomeIcon icon={faAngleDoubleRight} className={styles.footerIcon}/>
-            </Link>
-            <Link href="/" className={styles.footerLink}>
                 <p>Phản đối - Hợp tác</p><FontAwesomeIcon icon={faAngleDoubleRight} className={styles.footerIcon}/>
             </Link>
             <Link href="/" className={styles.footerLink}>
