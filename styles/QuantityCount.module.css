@@ -1,0 +1,27 @@
+.quantityCount {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    height: 36px;
+    box-sizing: border-box;
+    border: 1px solid var(--black-color);
+}
+
+.quantityCount button {
+    color: var(--black-color);
+    background-color: transparent;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+.quantityCount span {
+    display: inline-block;
+    width: 100%;
+    padding: 8px 16px;
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    font-weight: bold;
+}
+
