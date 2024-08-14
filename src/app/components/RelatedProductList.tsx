@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 const RelatedProductList = () => {
-  const productCount = 5;  // Number of products to display at a time
-  const totalProducts = 16; // Total number of products (replace with actual number if dynamic)
+  const productCount = 4;  // Number of products to display at a time
+  const totalProducts = 13; // Total number of products (replace with actual number if dynamic)
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {

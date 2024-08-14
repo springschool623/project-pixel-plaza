@@ -11,7 +11,6 @@ import RelatedProductList from '@/app/components/RelatedProductList';
 export default function ProductDetailsID({ params }: { params: { productId: string } }) {
   const handleQuantityChange = (quantity: number) => {
     console.log("Selected Quantity:", quantity);
-    // Handle the quantity change (e.g., update state, send to backend, etc.)
   };
 
   return (

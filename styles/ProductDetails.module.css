@@ -105,6 +105,7 @@
     background-color: var(--white-color);
     font-weight: bold;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .detailAddFavoriteButton {
@@ -119,7 +120,6 @@
     margin-bottom: 5px;
     cursor: pointer;
 }
-
 
 .descTitleWrapper {
     display: flex;
@@ -146,6 +146,7 @@
     text-align: center;
     font-size: 28px;
     font-weight: 600;
+    margin-top: 0;
     margin-bottom: 10px;
 }
 

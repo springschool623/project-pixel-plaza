@@ -40,7 +40,7 @@
     border: 2px solid rgba(245, 245, 245, 1);
 }
 
-.text_field_width{
+.text_field_width {
     width: 100%;
     height: 100%;
     border-radius: 20px;
@@ -149,22 +149,8 @@
     font-weight: 600;
 }
 
-/* .customDatePickerWrapper .tui-date-picker-input {
-    border: none;
-    outline: none;
-    box-shadow: none;
+.customDatePicker {
+    margin-left: 50px;
+    padding: 0;
+    border-radius: 0;
 }
-
-.tui-has-focus,
-.tui-datepicker-input, 
-.tui-datetime-input{
-    border: none!important;
-    outline: none!important;
-}
-
-.tui-has-focus::after,
-.tui-datepicker-input::after,
-.tui-datetime-input::after{
-    border: none!important;
-    outline: none!important;
-} */

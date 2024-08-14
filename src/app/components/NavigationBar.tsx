@@ -12,31 +12,31 @@ const NavigationBar = () => {
       <div>
         <ul className={styles.navList}>
           <li className={styles.navItem}>
-            <Link href="/home">
+            <Link href="/home" className={styles.navLink}>
               <FontAwesomeIcon icon={faHome} className={styles.navbarIcon}/>
               <span>Trang chủ</span>
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/shop">
+            <Link href="/shop" className={styles.navLink}>
               <FontAwesomeIcon icon={faShoppingBag} className={styles.navbarIcon}/>
               <span>Cửa hàng</span>
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/shop/xbox">
+            <Link href="/shop/xbox" className={styles.navLink}>
               <FontAwesomeIcon icon={faXbox} className={styles.navbarIcon}/>
               <span>Xbox</span>
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/shop/playstation">
+            <Link href="/shop/playstation" className={styles.navLink}>
               <FontAwesomeIcon icon={faPlaystation} className={styles.navbarIcon}/>
               <span>Playstation</span>
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/shop">
+            <Link href="/shop" className={styles.navLink}>
               <FontAwesomeIcon icon={faList} className={styles.navbarIcon}/>
               <div className={styles.navbarItemDropdown}>
                 <span>Thể loại</span>
@@ -46,7 +46,7 @@ const NavigationBar = () => {
             <NavBarContent/>
           </li>
           <li className={styles.navItem}>
-            <Link href="/shop">
+            <Link href="/shop" className={styles.navLink}>
               <FontAwesomeIcon icon={faHeadset} className={styles.navbarIcon}/>
               <span>Gaming Gear</span>
             </Link>
