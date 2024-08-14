@@ -6,24 +6,16 @@ import styles from '../../../../styles/Cart.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
+import QuantityCount from '@/app/components/QuantityCount';
 
 export default function Cart() {
-  // Initial quantities for each product row
   const initialQuantities = [1, 1];
   const [quantities, setQuantities] = useState(initialQuantities);
 
-  const handleIncrement = (index: any) => {
+  const handleQuantityChange = (index: number, quantity: number) => {
     const newQuantities = [...quantities];
-    newQuantities[index] += 1;
+    newQuantities[index] = quantity;
     setQuantities(newQuantities);
-  };
-
-  const handleDecrement = (index: any) => {
-    const newQuantities = [...quantities];
-    if (newQuantities[index] > 1) {
-      newQuantities[index] -= 1;
-      setQuantities(newQuantities);
-    }
   };
 
   const products = [
@@ -56,7 +48,7 @@ export default function Cart() {
             <tr className={styles.tableRows} key={product.name + index}>
               <td className={styles.tableProduct}>
                 <div className={styles.tableProductImage}>
-                  <Image src='/images/tay_cam_xbox_fire_vapor.jpg' alt='Tay cầm Xbox' width={200} height={200}/>
+                  <Image src='/images/tay_cam_xbox_fire_vapor.jpg' alt='Tay cầm Xbox' width={200} height={200} />
                 </div>
                 <div className={styles.tableProductInfo}>
                   <span>{product.name}</span>
@@ -65,16 +57,15 @@ export default function Cart() {
               </td>
               <td className={styles.tablePrice}>{product.price.toLocaleString()}đ</td>
               <td className={styles.tableQuantity}>
-                <div className={styles.quantityCount}>
-                  <button onClick={() => handleIncrement(index)}>+</button>  
-                  <span>{quantities[index]}</span>
-                  <button onClick={() => handleDecrement(index)}>-</button>
-                </div>
+                <QuantityCount
+                  initialQuantity={quantities[index]}
+                  onQuantityChange={(quantity) => handleQuantityChange(index, quantity)}
+                />
               </td>
               <td className={styles.tableTotal}>{(product.price * quantities[index]).toLocaleString()}đ</td>
               <td className={styles.tableAction}>
                 <button>
-                  <FontAwesomeIcon icon={faX} />            
+                  <FontAwesomeIcon icon={faX} />
                 </button>
               </td>
             </tr>
@@ -86,10 +77,10 @@ export default function Cart() {
           <label>Tiền hàng hóa: <span>{(products.reduce((total, product, index) => total + (product.price * quantities[index]), 0)).toLocaleString()}đ</span></label>
           <label>Giảm giá: <span>0</span></label>
           <label>Tạm tính: <span>{(products.reduce((total, product, index) => total + (product.price * quantities[index]), 0)).toLocaleString()}đ</span></label>
-          <label><input type="checkbox"/>Tôi đã đọc và đồng ý chính sách bảo mật và điều kiện thanh toán</label>
+          <label><input type="checkbox" />Tôi đã đọc và đồng ý chính sách bảo mật và điều kiện thanh toán</label>
           <Link href="/payment" className={styles.buttonPayment}>
             <span>THANH TOÁN</span>
-          </Link>  
+          </Link>
           <label>Đăng nhập hoặc đăng ký để nhận thêm nhiều thông tin ưu đãi hơn</label>
         </div>
       </div>

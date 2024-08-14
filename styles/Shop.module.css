@@ -32,9 +32,6 @@
 }
 
 .allItemContainer {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
     width: 82%;
     margin-left: 50px;
 }
@@ -48,12 +45,18 @@
 .allItemContainer {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .allItemContainerHeader {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+}
+
+.allItemContainerBody {
+    height: 1000px;
+    overflow-y: scroll;
 }
 
 .filterSelector {

@@ -5,10 +5,13 @@ import Link from 'next/link';
 import styles from '../../../styles/ProductCard.module.css'
 
 const ProductCard = () => {
+
+  const productId = '12345';
+
   return (
       <div className={styles.cardWrapper}>
         <div className={styles.cardImg}>
-          <Link href='/products/product-{id}'>
+          <Link href={`/products/${productId}`}>
             <Image src="/proitem1.jpg" alt="Sản phẩm" width={200} height={200}></Image>
           </Link>
         </div>
