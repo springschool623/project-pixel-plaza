@@ -17,7 +17,7 @@ const HomePageNewItemList = () => {
 
   return (
     <div className={styles.listContent}>
-      <div className={styles.listCover}>
+      <div className={`${styles.listCover} ${styles.allItemListCover}`}>
         {renderProductCards()}
       </div>
     </div>
