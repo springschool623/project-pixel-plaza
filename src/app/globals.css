@@ -7,10 +7,14 @@
   --primary-color: #4176FC;
   --secondary-color: #FDFFF7;
   --dark-blue-color: #293854;
-  --black-color: #201F24;
+  --black-color: #252525;
   --white-color: #FEFEFE;
   --lighter-primary-color: #4176fc8a;
   --gray-color: #c1c1c1;
+
+  --text-color: var(--black-color);
+
+  --card-shadow-color: rgba(0, 0, 0, 0.1);
 
   /* FONT */
   --primary-font-family: '__Montserrat_b1da2a', '__Montserrat_Fallback_b1da2a';
@@ -23,6 +27,18 @@ body {
   background: var(--white-color);
   color: var(--black-color);
   font-family: var(--primary-font-family);
+}
+
+body:has(#darkmodeButton:checked) {
+  --primary-color: var(--dark-blue-color);
+  --secondary-color: #d4d5cf;
+  --white-color: #cdcdcd;
+
+  --card-shadow-color: rgba(255, 255, 255, 0.1);
+
+  --text-color: var(--white-color);
+  
+  background: var(--black-color);
 }
 
 .mainCSS {

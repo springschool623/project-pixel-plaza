@@ -1,7 +1,8 @@
 .listTitle {
     font-size: 20px;
     font-weight: bold;
-    border-bottom: 2px solid var(--black-color);
+    color: var(--text-color);
+    border-bottom: 2px solid var(--text-color);
 }
 
 .listCover {

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faShoppingCart, faUserCircle, faSearch, faHeart } from '@fortawesome/free-solid-svg-icons';
 import styles from '../../../styles/Header.module.css'
+import ToggleDarkMode from './ToggleDarkMode';
 
 const Header = () => {
   return (
@@ -20,6 +21,7 @@ const Header = () => {
         </button>
       </div>
       <ul className={styles.headerList}>
+      <ToggleDarkMode/>
         <li className={styles.headerItem}>
           <Link href="/login">
               <FontAwesomeIcon icon={faUserCircle} className={styles.headerIcon}/>

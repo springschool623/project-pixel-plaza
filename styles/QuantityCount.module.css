@@ -4,11 +4,11 @@
     width: 120px;
     height: 36px;
     box-sizing: border-box;
-    border: 1px solid var(--black-color);
+    border: 1px solid var(--text-color);
 }
 
 .quantityCount button {
-    color: var(--black-color);
+    color: var(--text-color);
     background-color: transparent;
     border: none;
     padding: 8px 16px;
@@ -20,8 +20,9 @@
     width: 100%;
     padding: 8px 16px;
     text-align: center;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    color: var(--text-color);
+    border-left: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
     font-weight: bold;
 }
 

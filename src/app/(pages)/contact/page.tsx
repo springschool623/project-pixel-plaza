@@ -1,10 +1,10 @@
 'use client'
-import CustomDatePicker from "@/app/components/CustomDatePicker";
+
+import ToggleDarkMode from "@/app/components/ToggleDarkMode";
 
 export default function Contact() {
   return(
     <div>
-      <CustomDatePicker/>
     </div>
   );
 }
