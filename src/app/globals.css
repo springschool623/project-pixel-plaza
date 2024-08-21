@@ -4,11 +4,11 @@
 /* styles/colors/colors.css */
 :root {
   /* COLOR */
-  --primary-color: #4176FC;
-  --secondary-color: #FDFFF7;
+  --primary-color: #4176fc;
+  --secondary-color: #fdfff7;
   --dark-blue-color: #293854;
   --black-color: #252525;
-  --white-color: #FEFEFE;
+  --white-color: #fefefe;
   --lighter-primary-color: #4176fc8a;
   --gray-color: #c1c1c1;
 
@@ -32,12 +32,12 @@ body {
 body:has(#darkmodeButton:checked) {
   --primary-color: var(--dark-blue-color);
   --secondary-color: #d4d5cf;
-  --white-color: #cdcdcd;
+  --gray-color: #777777;
 
   --card-shadow-color: rgba(255, 255, 255, 0.1);
 
   --text-color: var(--white-color);
-  
+
   background: var(--black-color);
 }
 

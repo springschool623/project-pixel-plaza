@@ -1,7 +1,5 @@
-import Image from "next/image";
+import Image from 'next/image'
 
-export default function Home() {
-  return(
-    <div>PIXEL PLAZA</div>
-  );
+export default function LandingPage() {
+  return <div></div>
 }
