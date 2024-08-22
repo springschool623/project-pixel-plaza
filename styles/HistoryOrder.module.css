@@ -1,82 +1,86 @@
-.cover{
-    width: 100%;
-    margin-bottom: 40px;
+.historyWrapper {
+  margin: 20px;
+  color: var(--text-color);
 }
 
-.header{
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.divider{
-    content: "";
-    flex: 1;
-    height: 1px;
-    background-color: #000;
-    margin-bottom: 20px;
+.historyTitle {
+  font-weight: bold;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--gray-color);
+  margin-bottom: 20px;
 }
 
 .tableContent {
-    width: 100%;
-    box-sizing: border-box;
-    margin: 20px 0;
-    padding: 0 20px;
-    text-align: left;
-    font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 20px 0;
+  padding: 0 20px;
+  text-align: left;
+  font-size: 14px;
 }
 
 .tableRows {
-    height: 20px;
+  height: 20px;
 }
 
-.tableContent, .tableRows {
-    border-bottom: 1px solid #cccccc;
-    border-collapse: collapse;
+.tableContent,
+.tableRows {
+  border-bottom: 1px solid #cccccc;
+  border-collapse: collapse;
 }
 
 .tableHeader th {
-    font-weight: 700;
-    height: 40px;
-    font-size: 16px;
+  font-weight: 700;
+  height: 40px;
+  font-size: 16px;
 }
 
-.tableRows td{
-    
-    padding: 0;
-    padding-top: 28px;
-    padding-bottom: 40px;
+.tableRows td {
+  padding: 0;
+  padding-top: 28px;
+  padding-bottom: 40px;
 }
 
-.tableRows th:last-child, .tableRows td:last-child{
-    text-align: center;
+.tableRows th:last-child,
+.tableRows td:last-child {
+  text-align: center;
 }
 
 .tableDate {
-    width: 12%;
+  width: 12%;
 }
 
 .tableId {
-    width: 12%;
+  width: 12%;
 }
 
 .tableProduct {
-    width: 50%;
+  width: 50%;
 }
 
 .tableTotal {
-    width: 10%;
+  width: 10%;
 }
-
-/* .tableQuantity span {
-    display: inline-block;
-    width: 100%;
-    text-align: left;
-} */
 
 .tableStatus {
-    width: 10%;
+  width: 10%;
 }
 
-.tableDatas{
-    width: 100px;
+.tableStatus span {
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.statusDelivered {
+  background-color: green;
+  color: var(--white-color);
+}
+
+.statusCheck {
+  background-color: cyan;
+  color: var(--black-color);
+}
+
+.tableDatas {
+  width: 100px;
 }

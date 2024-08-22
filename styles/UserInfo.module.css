@@ -1,85 +1,71 @@
-.cover{
-    width: 100%;
-    margin-bottom: 40px;
+.userInfoWrapper {
+  margin: 20px;
+  color: var(--text-color);
 }
 
-.header{
-    font-size: 20px;
-    font-weight: bold;
+.userInfoTitle {
+  font-weight: bold;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--gray-color);
+  margin-bottom: 20px;
 }
 
-.divider{
-    content: "";
-    flex: 1;
-    height: 1px;
-    background-color: #000;
-    margin-bottom: 20px;
+.userInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
 }
 
-.label{
-    margin-bottom: 5px;
-    margin-left: 5px;
+.userInfoInput {
+  display: flex;
+  gap: 20px;
 }
 
-.width_column,
-.width{
-    display: flex;
-    flex-direction: column;
-    width: 48%;
+.userInfoInputWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-.text_field_width{
-    width: 90%;
-    height: 46px;
-    border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: 1px solid #cccccc;
-    font-size: 16px;
+.inputLabel {
+  margin-bottom: 5px;
 }
 
-.text_field_width:focus{
-    outline: none;
+.inputField {
+  width: 100%;
+  height: 46px;
+  border-radius: 2px;
+  padding: 0 15px;
+  border: 1px solid var(--gray-color);
+  box-sizing: border-box;
+  background-color: var(--secondary-color);
+  font-size: 16px;
+  font-family: var(--primary-font-family);
 }
 
-.row{
-    display: flex;
-    justify-content: space-between;
+.inputField:focus {
+  outline: none;
 }
 
-.cover_box{
-    margin-left: 20px;
+.updateBtn {
+  align-self: center;
+  width: 350px;
+  height: 50px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 2px;
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 18px;
+  font-family: var(--primary-font-family);
+  cursor: pointer;
 }
 
-.width {
-    margin-left: 20px;
-    margin-bottom: 35px;
-    margin-top: 35px;
+.userInfoInputWrapper_Gender {
+  width: 40%;
 }
 
-.text_field_width_full{
-    width: 1185px;
-    height: 46px;
-    border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: 1px solid #cccccc;
-    font-size: 16px;
-}
-
-.updateBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.updateBtn{
-    width: 350px;
-    height: 50px;
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 10px;
-    color: var(--white-color);
-    font-weight: 600;
-    font-size: 18px;
+.userInfoInputWrapper_DOB {
+  width: 50%;
 }

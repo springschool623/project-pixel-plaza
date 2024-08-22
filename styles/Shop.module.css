@@ -1,72 +1,82 @@
 .allItemWrapper {
-    display: flex;
+  display: flex;
 }
 
 .allItemMenu {
-    width: 18%;
+  width: 18%;
+  color: var(--text-color);
 }
 
 .allItemMenu ul {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .allItemMenu .allItemMenuList {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
 }
 
-.allItemMenu .allItemMenuList .allItemMenuIcon{
-    transform: rotate(-90deg);
-    transition: 1s;
+.allItemMenu .allItemMenuList .allItemMenuIcon {
+  transform: rotate(-90deg);
+  transition: 1s;
 }
 
-.allItemMenu .allItemMenuList:hover .allItemMenuIcon{
-    transform: rotate(0);
+.allItemMenu .allItemMenuList:hover .allItemMenuIcon {
+  transform: rotate(0);
 }
 
 .allItemContainer {
-    width: 82%;
-    margin-left: 50px;
+  width: 82%;
+  margin-left: 50px;
 }
 
 .menuBrands {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menuBrands input[type='checkbox'] {
+  cursor: pointer;
 }
 
 .allItemContainer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .allItemContainerHeader {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.allItemContainerHeader span {
+  color: var(--text-color);
 }
 
 .allItemContainerBody {
-    height: 1000px;
-    overflow-y: scroll;
+  height: 1000px;
+  overflow-y: scroll;
 }
 
 .filterSelector {
-    width: 80px;
-    height: 30px;
-    outline: none;
-    border: 1px solid black;
+  width: 80px;
+  height: 30px;
+  outline: none;
+  border: 1px solid var(--gray-color);
 }
 
-.filterSelector option{
-    border-radius: 15px;
-    background-color: red;
+.filterSelector option {
+  border-radius: 15px;
+  background-color: red;
 }

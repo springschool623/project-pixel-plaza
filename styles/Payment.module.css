@@ -1,37 +1,37 @@
 .paymentWrapper {
-    position: relative;
-    width: 100%;
-    height: 1460px;
-    background-color: var(--white-color);
-    font-family: var(--primary-font-family);
+  position: relative;
+  width: 100%;
+  height: 1460px;
+  background-color: var(--white-color);
+  font-family: var(--primary-font-family);
 }
 
 .leftWrapper {
-    position: absolute;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background-color: var(--lighter-primary-color);
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--lighter-primary-color);
 }
 
 .paymentContainer {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-    height: 90%;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 90%;
 }
 
 .leftContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 50%;
-    height: 100%;
-    padding-right: 50px;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+  height: 100%;
+  padding-right: 50px;
+  box-sizing: border-box;
 }
 
 .rightContainer {
@@ -47,277 +47,278 @@
 }
 
 .paymentLogo {
-    width: 210px;
-    height: 70px;
-    margin-bottom: 20px;
+  width: 210px;
+  height: 70px;
+  margin-bottom: 20px;
 }
 
-.paymentLogo img{
-    width: 100%;
-    height: 100%;
+.paymentLogo img {
+  width: 100%;
+  height: 100%;
 }
 
 .paymentInput {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
 }
 
 .paymentInput label {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .inputContent {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 8px 12px;
-    border: 1.5px solid var(--black-color);
-    font-size: 12px;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  border: 1.5px solid var(--black-color);
+  font-size: 12px;
+}
 
-  .paymentInput span {
-    font-size: 12px;
-    color: var(--gray-color);
-  }
+.paymentInput span {
+  font-size: 12px;
+  color: var(--gray-color);
+}
 
-  .inputContent input {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    padding: 2px 0;
-    border: 0;
-    outline: none;
-    font-size: 16px;
-  }
+.inputContent input {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 2px 0;
+  border: 0;
+  outline: none;
+  font-size: 16px;
+}
 
-  .inputContentPlus {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.inputContentPlus {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-  .inputContentItem {
-    display: flex;
-    flex-direction: column;
-  }
+.inputContentItem {
+  display: flex;
+  flex-direction: column;
+}
 
-  .inputContentIcon {
-    padding: 10px;
-    font-size: 20px;
-  } 
+.inputContentIcon {
+  padding: 10px;
+  font-size: 20px;
+}
 
-  .inputContentWrapper {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-  }
+.inputContentWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
 
-  .halfInputContent {
-    width: 48%;
-  }
+.halfInputContent {
+  width: 48%;
+}
 
-  .inputContent .inputText {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    padding: 2px 0;
-    border: 0;
-    outline: none;
-    font-size: 16px;
-  }
+.inputContent .inputText {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 2px 0;
+  border: 0;
+  outline: none;
+  font-size: 16px;
+}
 
-  .paymentCheckbox {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-  }
-  
-  .paymentCheckbox input{
-    width: 20px;
-    height: 20px;
-    margin: 0;
-    margin-right: 10px;
-  }
+.paymentCheckbox {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
 
-  .paymentCheckbox span{
-    color: var(--black-color);
-  }
+.paymentCheckbox input {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-right: 10px;
+}
 
-  .inputNote {
-    margin-bottom: 8px;
-  }
+.paymentCheckbox span {
+  color: var(--black-color);
+}
 
-  .countrySelectorWrapper {
-    display: flex;
-    justify-content: space-between;
-  }
+.inputNote {
+  margin-bottom: 8px;
+}
 
-  .paymentMethodWrapper {
-    display: flex;
-    flex-direction: column;
-    border: 1.5px solid black;
-    cursor: pointer;
-  }
+.countrySelectorWrapper {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .paymentMethodWrapper:nth-child(1) {
-    border-bottom: 0;
-  }
+.paymentMethodWrapper {
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid black;
+  cursor: pointer;
+}
 
-  .paymentMethodWrapper span {
-    color: var(--black-color);
-  }
+.paymentMethodWrapper:nth-child(1) {
+  border-bottom: 0;
+}
 
-  .paymentMethodItems {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 10px 12px;
-  }
+.paymentMethodWrapper span {
+  color: var(--black-color);
+}
 
-  .paymentMethodItems input{
-    width: 20px;
-    height: 20px;
-  }
+.paymentMethodItems {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 12px;
+}
 
-  .paymentButtonCancel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    margin: 0;
-    border: 0;
-    padding: 0;
-    background-color: var(--white-color);
-  }
+.paymentMethodItems input {
+  width: 20px;
+  height: 20px;
+}
 
-  .paymentCancelIcon {
-    width: 14px;
-    height: 16px;
-    transform: rotate(-90deg);
-  }
+.paymentButtonCancel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-color: var(--white-color);
+}
 
-  .paymentCancelIconRotate {
-    transform: rotate(0);
-    transition: transform 0.3s ease;
-  }
+.paymentCancelIcon {
+  width: 14px;
+  height: 16px;
+  transform: rotate(-90deg);
+}
 
-  .paymentMethodItemsContent {
-    border-top: 1.5px solid black;
-  }
+.paymentCancelIconRotate {
+  transform: rotate(0);
+  transition: transform 0.3s ease;
+}
 
-  .paymentMethodItemsContent span {
-    display: block;
-    margin: 10px 12px;
-    color: var(--black-color);
-  }
+.paymentMethodItemsContent {
+  border-top: 1.5px solid black;
+}
 
-  .paymentButtonContent {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-  }
+.paymentMethodItemsContent span {
+  display: block;
+  height: 100%;
+  margin: 10px 12px;
+  color: var(--black-color);
+}
 
-  .paymentBackButton {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 18px;
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--gray-color);
-  }
+.paymentButtonContent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
 
-  .paymentOrderButton {
-    width: 200px;
-    height: 60px;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: var(--primary-font-family);
-    background-color: var(--white-color);
-    padding: 8px 12px;
-    border: 1px solid var(--black-color);
-    cursor: pointer;
-  }
+.paymentBackButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--gray-color);
+}
 
-  .paymentFooter {
-    padding: 20px 0;
-    border-top: 1px solid var(--gray-color);
-  }
+.paymentOrderButton {
+  width: 200px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--primary-font-family);
+  background-color: var(--white-color);
+  padding: 8px 12px;
+  border: 1px solid var(--black-color);
+  cursor: pointer;
+}
 
-  .paymentFooterItems {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 10px;
-  }
+.paymentFooter {
+  padding: 20px 0;
+  border-top: 1px solid var(--gray-color);
+}
 
-  .paymentFooterLink {
-    color: var(--black-color);
-    font-size: 13px;
-  }
+.paymentFooterItems {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
 
-  .rightContainerItem {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
+.paymentFooterLink {
+  color: var(--black-color);
+  font-size: 13px;
+}
 
-  .paymentProductImg {
-    width: 60px;
-    height: 60px;
-  }
+.rightContainerItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 
-  .rightContainerItem span {
-    font-weight: 500;
-    font-size: 14px;
-  }
+.paymentProductImg {
+  width: 60px;
+  height: 60px;
+}
 
-  .rightContainerVoucher {
-    display: flex;
-    justify-content: space-between;
-  }
+.rightContainerItem span {
+  font-weight: 500;
+  font-size: 14px;
+}
 
-  .voucherInput {
-    width: 70%;
-    height: 45px;
-    padding: 10px 8px;
-    border: 1.5px solid var(--black-color);
-    box-sizing: border-box;
-    outline: none;
-    font-family: var(--primary-font-family);
-    font-weight: 500;
-  }
+.rightContainerVoucher {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .voucherButton {
-    width: 20%;
-    height: 45px;
-    padding: 8px 12px;
-    border: 1.5px solid var(--black-color);
-    box-sizing: border-box;
-    outline: none;
-    font-family: var(--primary-font-family);
-    font-weight: 500;
-  }
+.voucherInput {
+  width: 70%;
+  height: 45px;
+  padding: 10px 8px;
+  border: 1.5px solid var(--black-color);
+  box-sizing: border-box;
+  outline: none;
+  font-family: var(--primary-font-family);
+  font-weight: 500;
+}
 
-  .paymentTotal {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+.voucherButton {
+  width: 20%;
+  height: 45px;
+  padding: 8px 12px;
+  border: 1.5px solid var(--black-color);
+  box-sizing: border-box;
+  outline: none;
+  font-family: var(--primary-font-family);
+  font-weight: 500;
+}
 
-  .paymentTotalText {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 500;
-  }
+.paymentTotal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-  .paymentTotalText:nth-last-child(1) {
-    font-size: 18px;
-    font-weight: bold;
-  }
+.paymentTotalText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.paymentTotalText:nth-last-child(1) {
+  font-size: 18px;
+  font-weight: bold;
+}

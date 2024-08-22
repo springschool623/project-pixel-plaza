@@ -1,50 +1,48 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styles from '../../../../styles/UserInfo.module.css';
-import { faCircleUser, faClockRotateLeft, faHeart, faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
+import styles from '../../../../styles/UserInfo.module.css'
 
 export default function UserInfo() {
-    return(
-        <div className={styles.cover}>
-            <p className={styles.header}>Thông tin cá nhân</p>
-            <div className={styles.divider}></div>
-            <div className={styles.cover_box}>
-                <div className={styles.row}>
-                    <div className={styles.width_column}>
-                        <label className={styles.label}>Họ và Tên</label>
-                        <input type="text" className={styles.text_field_width}></input>
-                    </div>
-                    <div className={styles.width_column}>
-                        <label className={styles.label}>Giới tính</label>
-                        <input type="text" className={styles.text_field_width}></input>
-                    </div>
-                </div>
-            </div>
-            <div className={styles.width}>
-                <label className={styles.label}>Email</label>
-                <input type="text" className={styles.text_field_width_full}></input>
-            </div>
-            <div className={styles.cover_box}>
-                <div className={styles.row}>
-                    <div className={styles.width_column}>
-                        <label className={styles.label}>Số điện thoại</label>
-                        <input type="text" className={styles.text_field_width}></input>
-                    </div>
-                    <div className={styles.width_column}>
-                        <label className={styles.label}>Ngày sinh</label>
-                        <input type="text" className={styles.text_field_width}></input>
-                    </div>
-                </div>
-            </div>
-            <div className={styles.width}>
-                <label className={styles.label}>Địa chỉ</label>
-                <input type="text" className={styles.text_field_width_full}></input>
-            </div>
-
-            <div className={styles.updateBox}>
-                <button className={styles.updateBtn}>Cập nhật</button>
-            </div>
+  return (
+    <div className={styles.userInfoWrapper}>
+      <h2 className={styles.userInfoTitle}>Thông tin cá nhân</h2>
+      <div className={styles.userInfoContainer}>
+        <div className={styles.userInfoInput}>
+          <div className={styles.userInfoInputWrapper}>
+            <label className={styles.inputLabel}>Họ và Tên</label>
+            <input type="text" className={styles.inputField}></input>
+          </div>
+          <div
+            className={`${styles.userInfoInputWrapper} ${styles.userInfoInputWrapper_Gender}`}
+          >
+            <label className={styles.inputLabel}>Giới tính</label>
+            <input type="text" className={styles.inputField}></input>
+          </div>
         </div>
-    )
+        <div className={styles.userInfoInput}>
+          <div className={styles.userInfoInputWrapper}>
+            <label className={styles.inputLabel}>Email</label>
+            <input type="text" className={styles.inputField}></input>
+          </div>
+        </div>
+        <div className={styles.userInfoInput}>
+          <div className={styles.userInfoInputWrapper}>
+            <label className={styles.inputLabel}>Số điện thoại</label>
+            <input type="text" className={styles.inputField}></input>
+          </div>
+          <div
+            className={`${styles.userInfoInputWrapper} ${styles.userInfoInputWrapper_DOB}`}
+          >
+            <label className={styles.inputLabel}>Ngày sinh</label>
+            <input type="text" className={styles.inputField}></input>
+          </div>
+        </div>
+        <div className={styles.userInfoInput}>
+          <div className={styles.userInfoInputWrapper}>
+            <label className={styles.inputLabel}>Địa chỉ</label>
+            <input type="text" className={styles.inputField}></input>
+          </div>
+        </div>
+        <button className={styles.updateBtn}>Cập nhật</button>
+      </div>
+    </div>
+  )
 }
