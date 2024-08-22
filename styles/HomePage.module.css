@@ -1,11 +1,11 @@
 .homeBiggestBanner {
-    width: 100%;
-    height: 55vh;
-    background-color: var(--primary-color);
-    margin-bottom: 50px;
+  width: 100%;
+  height: 55vh;
+  background-color: var(--primary-color);
+  margin-bottom: 50px;
 }
 
 .homeBiggestBanner img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }

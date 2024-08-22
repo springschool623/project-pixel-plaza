@@ -1,0 +1,77 @@
+.landingPagePopUp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.landingPageWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 60px;
+  box-sizing: border-box;
+  background-color: var(--secondary-color);
+  font-family: var(--primary-font-family);
+}
+
+.landingPageHeader {
+  width: 100%;
+  height: 120px;
+}
+
+.landingPageLogo {
+  width: 300px;
+  height: 75px;
+}
+
+.landingPageLogo img {
+  width: 100%;
+  height: 100%;
+}
+
+.landingPageAboveContainer {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.landingPageBelowContainer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.landingPageInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1;
+}
+
+.landingPageTitle {
+  margin: 0;
+  color: var(--primary-color);
+  font-weight: 400;
+}
+
+.landingPageButton {
+  width: 200px;
+  height: 50px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  box-sizing: border-box;
+  color: var(--white-color);
+  background-color: black;
+  cursor: pointer;
+  font-family: var(--secondary-font-family);
+  font-size: 20px;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.landingPageSliderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

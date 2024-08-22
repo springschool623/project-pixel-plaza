@@ -1,5 +1,9 @@
 /* styles/globals.css */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@font-face {
+  font-family: 'SVN';
+  src: url(../../public/fonts/DFVN_PEXEL_GROTESK.TTF) format('truetype');
+}
 
 /* styles/colors/colors.css */
 :root {
@@ -19,6 +23,9 @@
 
   /* FONT */
   --primary-font-family: '__Montserrat_b1da2a', '__Montserrat_Fallback_b1da2a';
+  --secondary-font-family: '__Pixelify_Sans_bb86cf',
+    '__Pixelify_Sans_Fallback_bb86cf';
+  --thirdary-font-family: 'SVN', san-serif;
 }
 
 body {
@@ -45,6 +52,10 @@ body:has(#darkmodeButton:checked) {
 .mainCSS {
   margin: 20px 60px;
   margin-bottom: 120px;
+}
+
+body {
+  position: relative;
 }
 
 .sticky {
