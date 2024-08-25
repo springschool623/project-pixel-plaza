@@ -3,10 +3,7 @@ import Link from 'next/link'
 import styles from '../../../styles/HomePageList.module.css'
 import ProductCard from './ProductCard'
 
-const AllItemList = () => {
-  // Cố định số lượng sản phẩm muốn hiển thị
-  const productCount = 21
-
+const AllItemList = ({ productCount }: any) => {
   const renderProductCards = () => {
     const cards = []
     for (let i = 0; i < productCount; i++) {

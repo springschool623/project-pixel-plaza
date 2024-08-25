@@ -5,12 +5,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('/images/e00a239d-b505-41a6-82c5-85a56dc58293.jpg');
+  background: linear-gradient(
+    25deg,
+    rgba(65, 118, 252, 1) 0%,
+    rgba(41, 56, 80, 1) 100%
+  );
 }
 
 .userProfileTitle {
-  font-size: 30px;
+  font-style: italic;
+  font-size: 4rem;
   font-weight: bold;
+  font-family: var(--secondary-font-family);
   color: var(--white-color);
 }
 

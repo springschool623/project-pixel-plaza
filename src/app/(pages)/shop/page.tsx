@@ -17,6 +17,8 @@ export default function Shop() {
     { value: '4', label: 'Sắp xếp theo Z - A' },
   ]
 
+  const productCount = 10
+
   const handleDropdownChange = (value: any) => {
     console.log('Selected value:', value)
   }
@@ -86,11 +88,11 @@ export default function Shop() {
               options={options}
               onChange={handleDropdownChange}
             />
-            <span>Tổng: 440 sản phẩm</span>
+            <span>Tổng: {productCount} sản phẩm</span>
             <span></span>
           </div>
           <div className={styleShop.allItemContainerBody}>
-            <AllItemList />
+            <AllItemList productCount={productCount} />
           </div>
         </div>
       </div>

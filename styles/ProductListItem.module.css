@@ -20,6 +20,11 @@
   gap: 10px;
 }
 
+.productListItems a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
 .productListItems:nth-child(2) {
   flex: 1;
 }

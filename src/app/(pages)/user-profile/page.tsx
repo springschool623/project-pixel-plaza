@@ -33,7 +33,7 @@ export default function UserProfile() {
   return (
     <div>
       <div className={styles.userProfileHeader}>
-        <h1 className={styles.userProfileTitle}>Tài khoản của tôi</h1>
+        <h1 className={styles.userProfileTitle}>#Taikhoancuatoi</h1>
       </div>
       <div className={styles.userProfileWrapper}>
         <div className={styles.userProfileLeftNav}>

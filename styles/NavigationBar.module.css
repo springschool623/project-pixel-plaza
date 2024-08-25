@@ -56,87 +56,72 @@
 .navbarItemDropdown {
   display: flex;
   flex-direction: column;
-}
-
-.navItemContent {
-  display: none;
   position: relative;
-  padding: 0;
 }
 
-.navbarDropdownStyle {
-  display: none;
-}
-
-.navItem:hover .navbarDropdownStyle {
-  display: block;
+.navbarItemDropdown::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
   height: 2px;
+  width: 0%;
   background-color: var(--primary-color);
-  animation-name: loading;
-  animation-duration: 0.8s;
+  transition: all 0.8s ease;
 }
 
-.navItem:hover .navDropdownMenu {
+.navItem:hover .navbarItemDropdown::after {
+  width: 100%;
+}
+
+.navItem:hover > .navDropdownMenu {
   display: flex;
-  animation-name: dropdownRunIn;
-  animation-duration: 0.8s;
+  transform: translateY(0);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  opacity: 1;
+  visibility: visible;
+}
+
+.navItem:not(:hover) > .navDropdownMenu {
+  visibility: hidden;
+  transition-property: all;
+  transition-duration: 0.5s;
 }
 
 .navDropdownMenu {
-  display: none;
   position: absolute;
   z-index: 999;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   margin-top: 5px;
-  padding: 12px 24px;
-  border-top: 1px solid var(--black-color);
+  padding: 30px 60px;
+  padding-top: 0;
+  border-top: 1px solid var(--gray-color);
+  border-bottom: 1px solid var(--gray-color);
   box-sizing: border-box;
   background-color: var(--white-color);
+  opacity: 0;
+  transform: translateY(20px); /* Đặt vị trí bắt đầu từ dưới lên */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-.navDropdownMenu .navContent_1 {
-  width: 20%;
-  height: 100%;
-}
-
-.navDropdownMenu .navContent_2 {
-  width: 20%;
-  height: 100%;
-}
-
-.navDropdownMenu .navContent_3 {
-  width: 20%;
-  height: 100%;
-}
-
-.navDropdownMenu .navContent_4 {
-  width: 20%;
-  height: 100%;
-}
-
-.navDropdownMenu .navContent_5 {
-  width: 20%;
-  height: 100%;
+.navDropdownMenu .navContent {
+  width: 100%;
+  height: fit-content;
 }
 
 .navDropdownList {
   display: flex;
-  flex-direction: column;
-  gap: 5px;
+  flex-wrap: wrap;
   width: 100%;
-  height: 100%;
   list-style: none;
   padding: 0;
 }
 
 .navDropdownItem {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 10%;
-  padding-left: 15px;
+  width: 20%;
+  padding: 35px 10px 10px 0;
   box-sizing: border-box;
 }
 

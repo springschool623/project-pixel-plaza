@@ -3,6 +3,8 @@ import Image from 'next/image'
 
 import Link from 'next/link'
 import styles from '../../../styles/ProductCard.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 const ProductCard = () => {
   const productId = '12345'
@@ -26,7 +28,13 @@ const ProductCard = () => {
         <span className={styles.productPrice}>1.850.000đ</span>
       </div>
       <div className={styles.cardBtn}>
-        <button className={styles.buyBtn}>Mua ngay</button>
+        <button className={styles.buyBtn}>
+          <span>Add to</span>
+          <FontAwesomeIcon
+            icon={faCartArrowDown}
+            className={styles.detailAddFavorite}
+          />
+        </button>
       </div>
     </div>
   )
